@@ -1,0 +1,35 @@
+<div class="table-container">
+  <table class="tabla-favoritos">
+    <thead>
+      <tr>
+        <th>Imagen</th>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (p of favoritos; track p.id) {
+        <tr>
+          <td>
+            <div class="img-producto-container">
+              <img [src]="p.imagen" [alt]="p.nombre">
+            </div>
+          </td>
+          <td style="font-weight: 500;">{{ p.nombre }}</td>
+          <td>{{ p.precio | currency:'USD':'symbol':'1.0-0' }}</td> <td>
+            <button class="btn-eliminar" (click)="eliminar(p.id)">
+              Eliminar
+            </button>
+          </td>
+        </tr>
+      } @empty {
+        <tr>
+          <td colspan="4" style="text-align: center; padding: 40px; color: #777;">
+            No tienes productos favoritos guardados.
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

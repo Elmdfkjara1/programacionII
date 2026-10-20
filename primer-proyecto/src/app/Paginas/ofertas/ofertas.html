@@ -1,0 +1,110 @@
+<div class="colores">
+<section class="container py-5">
+
+  <div class="text-center mb-5">
+    <h1 class="display-4 fw-bold neon-title">
+      Ofertas Gamer
+    </h1>
+
+    <p class="text-secondary fs-5">
+      Las mejores placas de video al mejor precio
+    </p>
+  </div>
+
+  <div class="row g-4 background-light">
+
+    @for (gpu of gpus; track gpu.id) {
+
+      <div class="col-12 col-md-6 col-xl-4">
+
+        <div class="card gpu-card h-100 border-0">
+
+          @if (gpu.discount) {
+            <span class="badge bg-danger position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill">
+              -{{ gpu.discount }}%
+            </span>
+          }
+
+          <img
+            [src]="gpu.image"
+            [alt]="gpu.name"
+            class="card-img-top p-4"
+          >
+
+          <h3 class="card-title fw-bold">
+            {{ gpu.name }}
+          </h3>
+
+          <div class="price-box">
+
+            <div class="text-warning mb-3 fs-5">
+              ★★★★★
+            </div>
+
+            <div class="mb-3">
+              <div class="text-decoration-line-through text-secondary">
+                {{ gpu.oldPrice | currency:'ARS' }}
+              </div>
+
+              <div class="fs-2 fw-bold text-success">
+                {{ gpu.price | currency:'ARS' }}
+              </div>
+            </div>
+
+            <ul class="list-unstyled text-light-emphasis mb-4">
+
+              @for (feature of gpu.features; track feature) {
+                <li class="mb-2">
+                  ✔ {{ feature }}
+                </li>
+              }
+
+            </ul>
+
+            <!-- BOTÓN ÚNICO -->
+            <button
+              class="btn btn-neon w-100 fw-bold mt-3"
+              (click)="agregarAlCarrito(gpu)">
+              🛒 Agregar al carrito
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    }
+
+  </div>
+
+  <div class="benefits-box mt-5 p-5 rounded-4 text-center">
+
+    <h2 class="mb-4 neon-subtitle">
+      Beneficios
+    </h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        Envíos a todo el país
+      </div>
+
+      <div class="col-md-3">
+        Hasta 12 cuotas
+      </div>
+
+      <div class="col-md-3">
+        Garantía oficial
+      </div>
+
+      <div class="col-md-3">
+        Atención exclusiva
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+</div>

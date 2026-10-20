@@ -1,0 +1,46 @@
+.formularioContainer {
+    margin-top: 120px !important;
+    max-width: 500px;
+    border-radius: 12px;
+    background-color: #111827;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    padding: 30px;
+}
+
+.formularioContainer h2 {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.formularioContainer p {
+    color: #9ca3af;
+}
+
+.custom-input {
+    background-color: #0b1220 !important;
+    border: 1px solid #2b2b2b !important;
+    color: white !important;
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.custom-input:focus {
+    border-color: #00b3ff !important;
+    box-shadow: 0 0 0 3px rgba(0, 179, 255, 0.2);
+}
+
+.btn-login {
+    background: linear-gradient(90deg, #00ffcc, #00b3ff) !important;
+    color: #0a0a0a !important;
+    border: none !important;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 179, 255, 0.3);
+}

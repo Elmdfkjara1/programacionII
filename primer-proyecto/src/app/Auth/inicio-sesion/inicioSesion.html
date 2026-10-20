@@ -1,0 +1,30 @@
+<div class="container text-center mt-5 bg-dark text-light p-4 formularioContainer">
+
+  <h2 class="mb-2">Iniciar Sesión</h2>
+  <p class="text-secondary mb-4">
+    Por favor, completa los datos para acceder a tu cuenta.
+  </p>
+
+  <!-- INPUTS CON REFERENCIAS -->
+  <div class="mb-3 row align-items-center">
+    <label class="col-sm-3 col-form-label text-start">Email</label>
+    <div class="col-sm-9">
+      <input #email type="email" class="form-control custom-input" placeholder="Email">
+    </div>
+  </div>
+
+  <div class="mb-3 row align-items-center">
+    <label class="col-sm-3 col-form-label text-start">Password</label>
+    <div class="col-sm-9">
+      <input #password type="password" class="form-control custom-input" placeholder="Password">
+    </div>
+  </div>
+
+  <!-- BOTÓN -->
+  <button type="button"
+          class="btn btn-primary w-100 mt-3"
+          (click)="iniciarSesion(email, password)">
+    Iniciar Sesión
+  </button>
+
+</div>

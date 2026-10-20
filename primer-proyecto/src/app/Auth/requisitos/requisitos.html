@@ -1,0 +1,39 @@
+<div class="container text-center bg-dark text-light p-4 formularioContainer">
+
+  <h2 class="mb-2">Registrarse</h2>
+  <p class="text-secondary mb-4">
+    Por favor, completa los datos para crear tu cuenta.
+  </p>
+
+  <!-- EMAIL -->
+  <div class="mb-3 row align-items-center">
+    <label class="col-sm-4 col-form-label text-start">Email</label>
+    <div class="col-sm-8">
+      <input #email type="email" class="form-control custom-input" placeholder="Email">
+    </div>
+  </div>
+
+  <!-- PASSWORD -->
+  <div class="mb-3 row align-items-center">
+    <label class="col-sm-4 col-form-label text-start">Password</label>
+    <div class="col-sm-8">
+      <input #password type="password" class="form-control custom-input" placeholder="Password">
+    </div>
+  </div>
+
+  <!-- CONFIRM PASSWORD -->
+  <div class="mb-3 row align-items-center">
+    <label class="col-sm-4 col-form-label text-start">Confirmar</label>
+    <div class="col-sm-8">
+      <input #confirm type="password" class="form-control custom-input" placeholder="Confirmar Password">
+    </div>
+  </div>
+
+  <!-- BOTÓN -->
+  <button type="button"
+          class="btn btn-login w-100 mt-3"
+          (click)="registrar(email, password, confirm)">
+    Registrarse
+  </button>
+
+</div>

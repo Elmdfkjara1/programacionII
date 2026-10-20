@@ -1,0 +1,55 @@
+/* TITULO */
+.neon-title{
+  color:#00ffcc;
+  text-shadow:0 0 15px #00ffcc;
+}
+
+/* CARD */
+.product-card{
+  background:#111827;
+  border:1px solid #1f2937;
+  border-radius:18px;
+  transition:0.3s;
+  overflow:hidden;
+}
+
+.product-card:hover{
+  transform: translateY(-6px);
+  border-color:#00ffcc;
+  box-shadow:0 0 25px rgba(0,255,204,.25);
+}
+
+/* IMAGEN */
+.product-img{
+  height:200px;
+  object-fit:contain;
+  padding:15px;
+}
+
+/* BOTÓN NEÓN */
+.btn-neon{
+  background: linear-gradient(90deg, #00ffcc, #00b3ff);
+  border:none;
+  color:#0f172a;
+  transition:0.3s;
+  border-radius:10px;
+}
+
+.btn-neon:hover{
+  transform: scale(1.03);
+  box-shadow:0 0 15px rgba(0,255,204,.5);
+}
+
+/* BOTÓN OUTLINE */
+.btn-outline-neon{
+  border:1px solid #00ffcc;
+  color:#00ffcc;
+  background:transparent;
+  transition:0.3s;
+  border-radius:10px;
+}
+
+.btn-outline-neon:hover{
+  background:#00ffcc;
+  color:#0f172a;
+}

@@ -1,0 +1,124 @@
+/* COLORES */
+.text-primary-custom { color: #2b70b9; }
+.text-teal-custom { color: #1fb3a4; }
+
+.bg-blue { background-color: #2b70b9; }
+.bg-light-blue { background-color: #4da6e0; }
+.bg-teal { background-color: #1fb3a4; }
+
+/* CONTENEDOR CIRCULAR */
+.profile-circle-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GIF */
+.img-profile-gif {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 5;
+    background-color: #f8f9fa;
+}
+
+/* ANILLOS */
+.circle-border {
+    position: absolute;
+    border-radius: 50%;
+    border: 15px solid transparent;
+}
+
+.border-orange {
+    width: 380px;
+    height: 380px;
+    border-left-color: #f7941d;
+    transform: rotate(45deg);
+    z-index: 4;
+}
+
+.border-blue {
+    width: 420px;
+    height: 420px;
+    border-bottom-color: #0071bc;
+    transform: rotate(-30deg);
+    z-index: 3;
+}
+
+.border-teal {
+    width: 350px;
+    height: 350px;
+    border-top-color: #1fb3a4;
+    transform: rotate(20deg);
+    z-index: 2;
+}
+
+/* ICONOS */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FORMULARIO */
+.consulta-box {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+}
+.mapa-contacto {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+/* INPUTS */
+.custom-input {
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.custom-input:focus {
+    border-color: #2b70b9;
+    box-shadow: 0 0 10px rgba(43, 112, 185, 0.2);
+}
+
+/* BOTÓN */
+.btn-send {
+    background: linear-gradient(90deg, #2b70b9, #1fb3a4);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-send:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(43, 112, 185, 0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .profile-circle-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .img-profile-gif {
+        width: 220px;
+        height: 220px;
+    }
+
+    .border-orange { width: 260px; height: 260px; }
+    .border-blue { width: 290px; height: 290px; }
+    .border-teal { width: 240px; height: 240px; }
+}
